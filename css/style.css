@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.prem-cash {
+    padding: 120px 0;
+
+    & .prem-cash__elements {
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+
+        & .prem-cash__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgb(58, 58, 58);
+            border-radius: 20px;
+            overflow: hidden;
+            width: 350px;
+            background-color: rgb(105, 105, 105);
+            color: rgb(247, 247, 247);
+
+            & .item__info {
+                padding: 15px 20px;
+
+                & h2 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                & hr {
+                    background-color: rgb(35, 35, 35);
+                }
+
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    & li {
+                        font-size: 20px;
+                        text-align: start;
+
+                        & span {
+                            text-decoration: line-through;
+                            color: rgb(201, 201, 201);
+                        }
+                    }
+
+                    & .line-through {
+                        text-decoration: line-through;
+                    }
+
+                    & .cost {
+                        font-size: 24px;
+                        
+                    }
+                }
+            }
+
+            & button {
+                padding: 16px 0;
+                font-size: 22px;
+                background-color: rgb(48, 211, 48);
+                border: 2px solid rgb(48, 211, 48);
+                transition: 0.4s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
