@@ -578,7 +578,7 @@ header {
         cursor: pointer;
         margin: 10px;
         border-radius: 15px;
-        color: var(--color2);
+        color: rgba(0, 0, 0, 0.806) !important;
 
         &:hover {
           background-color: var(--color1);
