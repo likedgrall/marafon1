@@ -396,6 +396,7 @@
   }
 
   .questions {
+    padding: 80px 8px !important;
     & h2 {
       font-size: 30px;
     }
@@ -497,7 +498,13 @@
       font-size: 18px;
     }
 
-    & .workout__item {
+
+    & .workouts-type__list {
+      width: 100vw;
+      position: relative;
+      padding: 32px 16px;
+
+      & .workout__item {
       max-width: 275px !important;
 
       & img {
@@ -505,6 +512,8 @@
         height: 275px !important;
       }
     }
+    }
+    
   }
 
   .food {
@@ -516,13 +525,19 @@
       font-size: 18px;
     }
 
-    & .food__item {
+    & .food-type__list {
+      width: 100vw;
+      position: relative;
+      padding: 32px 16px;
+
+      & .food__item {
       max-width: 275px !important;
 
       & img {
         width: 275px !important;
         height: 275px !important;
       }
+    }
     }
   }
 }
